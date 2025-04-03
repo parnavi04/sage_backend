@@ -57,4 +57,4 @@ def chat_handler():
 # --- Run Flask App ---
 if __name__ == '__main__':
     # Flask runs on port 5000 by default, which matches your React fetch URL
-    app.run(debug=True) # debug=True is helpful for development, disable for production
+    app.run() # debug=True is helpful for development, disable for production
