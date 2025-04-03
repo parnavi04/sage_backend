@@ -9,7 +9,7 @@ from flask_cors import CORS # Import CORS
 app = Flask(__name__)
 # Enable CORS for requests from your React app's origin (e.g., http://localhost:3000)
 # In production, you might want to restrict this to your actual frontend domain.
-CORS(app, resources={r"/*": {"origins": ["https://sage-frontend-mwiy.vercel.app/", "http://localhost:3000"]}})
+CORS(app)
 
 # --- Gemini API Configuration ---
 load_dotenv()
